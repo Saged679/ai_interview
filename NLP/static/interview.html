@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interview with Afaf</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+            background: linear-gradient(135deg, #0e1117 0%, #1a1a2e 50%, #16213e 100%);
+            color: #e0e0e0;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .header {
+            text-align: center;
+            padding: 2rem 1rem 1rem;
+        }
+        .header h1 {
+            font-size: 2.2rem;
+            color: #fff;
+            margin-bottom: 0.5rem;
+        }
+        .header p {
+            color: #aaa;
+            font-size: 1.1rem;
+            max-width: 500px;
+            margin: 0 auto;
+        }
+        .status {
+            background: rgba(16, 163, 127, 0.15);
+            border: 1px solid rgba(16, 163, 127, 0.4);
+            border-radius: 10px;
+            padding: 0.75rem 1.5rem;
+            margin: 1.5rem 0;
+            color: #52c97a;
+            font-size: 1rem;
+            text-align: center;
+        }
+        .widget-area {
+            flex: 1;
+            display: flex;
+            align-items: flex-start;
+            justify-content: center;
+            width: 100%;
+            padding: 1rem 2rem 3rem;
+        }
+        .footer {
+            text-align: center;
+            padding: 1rem;
+            color: #555;
+            font-size: 0.85rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>🎙️ Interview with Afaf</h1>
+        <p>Your AI interviewer is ready to begin</p>
+    </div>
+    <div class="status" id="status">
+        ⏳ Loading interview widget...
+    </div>
+    <div class="widget-area">
+        <elevenlabs-convai
+            agent-id="agent_0401kjmf6968fnctfz4kp89jd8xb"
+            dynamic-variables='{"job_description": "We are looking for a skilled Full-Stack .NET Developer to design, develop, and maintain modern web applications. You will work on both backend and frontend components, collaborate with cross-functional teams, and contribute to building scalable, secure, and high-performance systems.\nKey Responsibilities\nBackend Development\nDesign, develop, and maintain RESTful APIs using .NET / .NET Core\nBuild scalable backend services using C#\nWork with Entity Framework / Dapper for data access\nDesign and optimize SQL Server databases and queries\nImplement authentication, authorization, and security best practices\nIntegrate with third-party APIs and services\nFrontend Development\nDevelop responsive web interfaces using HTML, CSS, JavaScript\nBuild modern UI components using Angular / React / Blazor (based on stack)\nEnsure cross-browser compatibility and performance optimization\nConsume backend APIs and handle state management\nSystem &amp; Architecture\nParticipate in system design and technical architecture decisions\nWrite clean, maintainable, and well-documented code\nApply SOLID principles and design patterns\nOptimize application performance and scalability\nCollaboration &amp; Delivery\nWork closely with Product Managers, Designers, and QA teams\nParticipate in code reviews and technical discussions\nDebug, troubleshoot, and resolve production issues\nFollow Agile/Scrum development processes\nWhat We Offer\nCompetitive salary and benefits\nOpportunity to work on impactful, real-world products\nCollaborative and growth-focused work environment\nFlexible working model (on-site / hybrid / remote \u2013 optional)\nCareer development and learning opportunities"}'
+        ></elevenlabs-convai>
+    </div>
+    <div class="footer">
+        Powered by ElevenLabs Conversational AI
+    </div>
+
+    <script src="https://unpkg.com/@elevenlabs/convai-widget-embed" async type="text/javascript"></script>
+    <script>
+        // Wait for widget to load, then auto-click the call button
+        let clickAttempts = 0;
+        function tryAutoStart() {
+            clickAttempts++;
+            const widget = document.querySelector('elevenlabs-convai');
+            if (!widget) {
+                if (clickAttempts < 40) setTimeout(tryAutoStart, 500);
+                return;
+            }
+            document.getElementById('status').innerHTML =
+                '✅ Widget loaded! Attempting to start call...';
+
+            // Try to click the call button inside shadow DOM
+            try {
+                if (widget.shadowRoot) {
+                    const buttons = widget.shadowRoot.querySelectorAll('button');
+                    for (const btn of buttons) {
+                        btn.click();
+                        document.getElementById('status').innerHTML =
+                            '🎙️ Interview in progress — speak naturally with Afaf';
+                        document.getElementById('status').style.borderColor = 'rgba(90, 159, 212, 0.4)';
+                        document.getElementById('status').style.background = 'rgba(30, 42, 58, 0.5)';
+                        document.getElementById('status').style.color = '#5a9fd4';
+                        return;
+                    }
+                }
+            } catch(e) {}
+
+            if (clickAttempts < 20) {
+                setTimeout(tryAutoStart, 1000);
+            } else {
+                document.getElementById('status').innerHTML =
+                    '✅ Widget loaded! Click the <strong>phone button</strong> below to start.';
+            }
+        }
+        setTimeout(tryAutoStart, 2000);
+    </script>
+</body>
+</html>

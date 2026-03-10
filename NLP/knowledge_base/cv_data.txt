@@ -1,0 +1,65 @@
+Name: Ahmed Hassan Mohamed
+Email: ahmed.hassan@email.com
+Phone: +20 101 234 5678
+Location: Cairo, Egypt
+LinkedIn: linkedin.com/in/ahmedhassan
+GitHub: github.com/ahmedhassan-dev
+
+=== SUMMARY ===
+Software Engineer with 2+ years of experience in full-stack web development and machine learning.
+Passionate about building scalable applications and applying AI to solve real-world problems.
+Currently a senior Computer Science student at Cairo University with a GPA of 3.7/4.0.
+
+=== EDUCATION ===
+Bachelor of Science in Computer Science
+Cairo University, Faculty of Computers and Artificial Intelligence
+Expected Graduation: June 2026
+GPA: 3.7 / 4.0
+Relevant Coursework: Data Structures, Algorithms, Machine Learning, Deep Learning, Software Engineering, Database Systems, Operating Systems, Computer Networks, Natural Language Processing, Computer Vision.
+
+=== TECHNICAL SKILLS ===
+Programming Languages: Python, JavaScript, TypeScript, Java, C++, SQL
+Frontend: React.js, Next.js, HTML5, CSS3, Tailwind CSS
+Backend: Node.js, Express.js, FastAPI, Django, Flask
+Databases: PostgreSQL, MongoDB, MySQL, Redis
+Machine Learning: TensorFlow, PyTorch, Scikit-learn, Pandas, NumPy, OpenCV
+Cloud & DevOps: AWS (EC2, S3, Lambda), Docker, Git, GitHub Actions, Linux
+Tools: VS Code, Postman, Figma, Jira
+
+=== WORK EXPERIENCE ===
+
+Software Engineering Intern — TechCorp Egypt
+June 2025 – September 2025
+- Developed RESTful APIs using FastAPI and PostgreSQL for an internal project management tool
+- Built a React.js dashboard that reduced manual reporting time by 40%
+- Implemented JWT-based authentication and role-based access control
+- Participated in Agile sprints, code reviews, and daily standups
+- Wrote unit and integration tests achieving 85% code coverage
+
+Machine Learning Research Assistant — Cairo University AI Lab
+January 2025 – May 2025
+- Assisted in research on Arabic NLP and sentiment analysis using BERT-based models
+- Preprocessed and cleaned datasets of 50,000+ Arabic social media posts
+- Fine-tuned AraBERT model achieving 89% accuracy on sentiment classification
+- Co-authored a paper submitted to a regional AI conference
+
+Freelance Web Developer
+September 2023 – May 2024
+- Built 5+ full-stack web applications for small businesses using React and Node.js
+- Developed an e-commerce platform handling 1,000+ products with Stripe integration
+- Implemented SEO optimizations that increased client web traffic by 60%
+
+=== CERTIFICATIONS ===
+- AWS Certified Cloud Practitioner (2025)
+- Deep Learning Specialization — Coursera (Andrew Ng) (2024)
+- Meta Front-End Developer Professional Certificate (2024)
+
+=== LANGUAGES ===
+- Arabic: Native
+- English: Fluent (IELTS 7.5)
+
+=== SOFT SKILLS ===
+- Strong problem-solving and analytical thinking
+- Effective communication and teamwork
+- Quick learner and self-motivated
+- Time management and meeting deadlines under pressure

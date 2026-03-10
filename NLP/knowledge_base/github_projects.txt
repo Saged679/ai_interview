@@ -1,0 +1,82 @@
+=== GITHUB PROFILE: github.com/ahmedhassan-dev ===
+Total Repositories: 12
+Total Stars: 47
+Total Contributions (last year): 634
+
+=== PROJECT 1: SmartRecipe-AI ===
+Repository: github.com/ahmedhassan-dev/SmartRecipe-AI
+Stars: 18 | Forks: 5
+Language: Python (72%), JavaScript (28%)
+Description: An AI-powered recipe recommendation system that suggests meals based on available ingredients. Uses computer vision to identify ingredients from photos.
+Tech Stack: FastAPI, React.js, TensorFlow, OpenCV, PostgreSQL, Docker
+Key Features:
+- Image classification model trained on 10,000+ ingredient images with 92% accuracy
+- RESTful API with 15+ endpoints for recipe CRUD operations
+- User authentication with OAuth2 (Google, Facebook)
+- Real-time ingredient detection using webcam
+- Deployed on AWS EC2 with CI/CD via GitHub Actions
+README highlights: Comprehensive documentation with setup guide, API docs, and architecture diagram.
+
+=== PROJECT 2: ArabicSentiment-Analyzer ===
+Repository: github.com/ahmedhassan-dev/ArabicSentiment-Analyzer
+Stars: 12 | Forks: 3
+Language: Python (95%), Jupyter Notebook (5%)
+Description: Fine-tuned AraBERT model for Arabic social media sentiment analysis. Supports Egyptian, Gulf, and Levantine dialects.
+Tech Stack: PyTorch, Transformers (Hugging Face), FastAPI, Streamlit
+Key Features:
+- Fine-tuned AraBERT on 50,000+ labeled Arabic tweets
+- Achieves 89% accuracy on sentiment classification (positive/negative/neutral)
+- REST API for real-time inference
+- Streamlit dashboard for visualization and interactive testing
+- Support for multiple Arabic dialects
+README highlights: Detailed model training notebook, evaluation metrics, and comparison with baseline models.
+
+=== PROJECT 3: TaskFlow-Pro ===
+Repository: github.com/ahmedhassan-dev/TaskFlow-Pro
+Stars: 8 | Forks: 2
+Language: TypeScript (60%), Python (40%)
+Description: A full-stack project management application with Kanban boards, team collaboration, and real-time updates.
+Tech Stack: Next.js, TypeScript, Node.js, Express, PostgreSQL, Redis, Socket.io, Docker
+Key Features:
+- Drag-and-drop Kanban board with real-time synchronization via WebSockets
+- Role-based access control (Admin, Manager, Member)
+- REST API with 25+ endpoints and comprehensive Swagger documentation
+- Real-time notifications using Socket.io
+- Redis caching reducing API response time by 60%
+- Docker Compose for local development setup
+- 80% test coverage with Jest and Supertest
+README highlights: Full architecture diagram, database schema, API documentation.
+
+=== PROJECT 4: EcoTrack-App ===
+Repository: github.com/ahmedhassan-dev/EcoTrack-App
+Stars: 5 | Forks: 1
+Language: JavaScript (80%), CSS (20%)
+Description: A mobile-responsive web app that helps users track their carbon footprint and suggests eco-friendly alternatives.
+Tech Stack: React.js, Node.js, Express, MongoDB, Chart.js
+Key Features:
+- Interactive dashboard with carbon footprint visualization
+- Personalized eco-tips based on user behavior
+- Social sharing and community challenges
+- REST API with MongoDB aggregation pipelines for analytics
+README highlights: Good UI/UX design, responsive across devices.
+
+=== PROJECT 5: ML-Paper-Implementations ===
+Repository: github.com/ahmedhassan-dev/ML-Paper-Implementations
+Stars: 4 | Forks: 0
+Language: Python (100%)
+Description: Collection of machine learning paper implementations from scratch using PyTorch. Includes transformers, GANs, and reinforcement learning algorithms.
+Tech Stack: PyTorch, NumPy, Matplotlib
+Papers Implemented:
+- Attention Is All You Need (Transformer)
+- Generative Adversarial Networks (GAN)
+- Deep Q-Network (DQN)
+- BERT: Pre-training of Deep Bidirectional Transformers
+- ResNet: Deep Residual Learning
+README highlights: Each implementation includes detailed comments, training logs, and comparison with original paper results.
+
+=== CONTRIBUTION ACTIVITY ===
+- Active contributor to open-source Arabic NLP tools
+- Regular commits (avg 3-4 per day on active projects)
+- Clean commit history with descriptive messages
+- Uses branching strategy (feature branches, pull requests)
+- Issues and project boards used for task tracking
